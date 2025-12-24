@@ -1,0 +1,157 @@
+.contactsPage {
+  width: 100vw;
+  min-height: 100vh;
+  color: #fff;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.topLeft {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.topRight {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+}
+
+.description {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contactList li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.contactList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+}
+
+.contactLink {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.bottomLeft {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+.bottomRight {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.address {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.licenses {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.licenses:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.requisites {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.requisites:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+.description span{
+    margin-left: 122px;
+}
+
+.centerSection {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.logoImage {
+    width: 625px;
+    height: 153px;
+}
+
+.rightSection {
+  position: absolute;
+  top: 60%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.contactPic {
+
+  width: 175px;
+  max-height: 225px;
+  object-fit: contain;
+}

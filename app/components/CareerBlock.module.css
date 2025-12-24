@@ -1,0 +1,142 @@
+.careerBlock {
+	padding: 4vh 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.titleSection {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.mainTitle, .hideText:nth-last-child(2) {
+	font-family: 'RockStar', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 106%;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.subtitle, .hideText:nth-last-child(1) {
+	font-family: 'RockStar', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 106%;
+	text-transform: uppercase;
+	width: 50%;
+	margin-left: 212px;
+	color: #fff;
+}
+
+.hideText, .hideImg, .hideDescription {
+	display: none;
+}
+
+.benefits, .hideText:nth-last-child(3) {
+	font-family: 'RockStar', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+	margin-left: 212px;
+}
+
+.imagesSection {
+	display: grid;
+	grid-template-columns: 307px 1fr;
+	max-width: 835px;
+	width: 100%;
+	align-items: end;
+	margin: 40px auto 0;
+	align-items: end;
+}
+
+.slideImage {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.picImage {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.callToActionContainer {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	justify-content: space-between;
+	max-width: 731px;
+	width: 100%;
+}
+
+.callToAction, .hideDescription {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114%;
+	letter-spacing: -0.02em;
+	color: #fff;
+	text-align: left;
+	max-width: 308px;
+	margin: 40px auto 0;
+  margin-right: 30%;
+}
+
+.buttonContainer {
+	max-width: 308px;
+	margin: 20px auto 0;
+	display: flex;
+	justify-content: flex-start;
+}
+
+@media(max-width: 1440px) {
+	.mainTitle, .subtitle, .benefits, .callToAction, .picImage {
+		display: none;
+	}
+	.hideText, .hideDescription, .hideImg {
+		display: block;
+	}
+
+}
+
+@media(max-width: 768px) {
+	.hideText {
+		width: 85%;
+	}
+	.hideText:nth-last-child(2) {
+		font-size: 4vw;
+	}
+	.slideImage {
+		display: none;
+	}
+	.imagesSection {
+		display: flex;
+		justify-content: end;
+	}
+	.hideDescription {
+		max-width: 100%;
+		margin: 0;
+		font-size: 2vw;
+		width: 100%;
+		display: block;
+		margin-top: 40px;
+	}
+	.callToActionContainer {
+		max-width: 82%;
+	}
+	.buttonContainer {
+		display: none;
+	}
+	.careerBlock {
+		margin-bottom: 70px;
+	}
+}

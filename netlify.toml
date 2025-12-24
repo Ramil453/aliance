@@ -1,0 +1,14 @@
+[build]
+  command = npm run build
+  publish = .next
+
+# Для SSR функций (если используете API routes)
+[[redirects]]
+  from = 
+  to = index.html
+  status = 200
+
+# Или для статического экспорта
+# [build]
+#   command = npm run build && npm run export
+#   publish = out

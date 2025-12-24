@@ -1,0 +1,151 @@
+.servicesBlock {
+  padding-top: 120px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.title, .hideText {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 106%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.title:nth-child(2), .hideText:nth-last-child(1) {
+  margin-left: 212px;
+}
+
+.swiper {
+  width: 100%;
+  padding-bottom: 60px;
+  padding-left: 212px;
+}
+
+.swiper :global(.swiper-slide) {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.serviceCard {
+  background: rgba(134, 137, 207, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  min-height: 145px;
+  border-radius: 4px;
+
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.serviceCard:hover {
+  background: rgba(134, 137, 207, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.serviceCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0;
+
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.serviceCard::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  border-radius: 0 0 4px 0;
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.serviceHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: auto;
+}
+
+.recIcon {
+  flex-shrink: 0;
+}
+
+.serviceCode {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.serviceTitle {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-top: auto;
+}
+
+.navigationContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+  z-index: 9999;
+  position: relative;
+  margin-top: -40px;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .services{
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 1440px) {
+  .title {
+    display: none;
+  }
+  .hideText {
+    display: block !important;
+  }
+}
+
+@media(max-width: 768px) {
+  .serviceCard {
+    width: 200px;
+    height: 100px;
+  }
+  .swiper {
+    padding-left: 70vw;
+    margin: 50px 0;
+  }
+}

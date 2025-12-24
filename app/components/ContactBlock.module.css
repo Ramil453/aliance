@@ -1,0 +1,251 @@
+.contactBlock {
+  padding: 4vh 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title, .hideTitle {
+    font-family: "RockStar", sans-serif;
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 1;
+    color: #fff;
+}
+
+.description, .hideDescription {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hideDescription {
+  display: none;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.inputWrapper {
+  position: relative;
+  --text-width: 0px;
+}
+
+.inputWrapper::before {
+  content: '[';
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 108%;
+  color: rgba(255, 255, 255, 1);
+  pointer-events: none;
+  z-index: 1;
+  transform: translateX(0);
+  transition: transform 0.1s ease;
+}
+
+.inputWrapper::after {
+  content: ']';
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 108%;
+  color: rgba(255, 255, 255, 1);
+  pointer-events: none;
+  z-index: 1;
+  transform: translateX(calc(var(--text-width) + 18px));
+  transition: transform 0.1s ease;
+}
+
+.input {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 108%;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 0;
+  padding-left: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.input::placeholder {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 108%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.channels {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.channelLabel {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+  transition: text-decoration 0.3s ease;
+}
+
+.channelLabel:hover {
+  text-decoration: underline;
+}
+
+.channelLabel::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.channelLabel:hover::before {
+  border-color: #FF5522;
+}
+
+.channelLabel:has(.radio:checked)::before {
+  background: #FF5522;
+  border-color: #FF5522;
+}
+
+.radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.formFooter {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+
+.formFooter:hover svg path {
+  fill: #f52;
+  transition: fill 0.3s ease;
+}
+
+.formFooter svg {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.formFooter:hover svg {
+  transform: scale(1.05);
+}
+
+.hideTitle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .hideDescription {
+    display: block;
+  }
+  .description { 
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .hideTitle {
+    font-size: 38px;
+    display: block;
+    text-transform: uppercase;
+  }
+  .title {
+    display: none;
+  }
+  .hideDescription {
+    font-size: 18px;
+    width: 100%;
+
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    display: block;
+  }
+  .channels {
+    width: 200px;
+     display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  grid-template-rows: repeat(2, 1fr);
+  }
+}

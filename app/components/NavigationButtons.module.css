@@ -1,0 +1,33 @@
+.navigationButtons {
+  display: flex;
+}
+
+.navButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.navButton:hover svg path {
+  fill: #f52;
+}
+
+.navButton:active {
+  opacity: 0.8;
+}
+
+.navButton svg {
+  display: block;
+}
+
+@media(max-width: 768px) {
+
+  .navigationButtons {
+    display: none;
+  }
+}
+

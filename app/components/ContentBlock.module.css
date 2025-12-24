@@ -1,0 +1,78 @@
+.contentBlock {
+  width: 100vw;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 120px 10px;
+  box-sizing: border-box;
+}
+
+.contentBlockTitle {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 5;
+}
+
+.contentInner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+  z-index: 1;
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 10px;
+}
+
+.contentParagraph {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 118%;
+}
+
+.sentence {
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.3s ease;
+  display: inline;
+}
+
+.sentenceActive {
+  color: #fff;
+}
+
+.fadeTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to bottom, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.fadeBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to top, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+
+

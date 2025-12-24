@@ -1,0 +1,129 @@
+.faqBlock {
+  padding: 120px 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.title {
+    font-family: "RockStar", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 106%;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.title span {
+    margin-left: 212px;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1084px;
+  margin-left:  auto;
+  width: 100%;
+}
+.plusIcon.active svg path {
+    fill: #FF5522;
+  }
+  
+
+
+.faqItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.faqItem:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.faqQuestion:hover {
+    background: rgba(134, 137, 207, 0.1);}
+
+.faqQuestion.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.questionText {
+    font-family: "RockStar", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.plusIcon {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plusIcon.active {
+  color: #f52;
+  transform: rotate(45deg);
+}
+
+.faqAnswer {
+  padding: 0 0 30px 0;
+  animation: slideDown 0.3s ease;
+}
+
+.faqAnswer p {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-left: 100px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+
+
+
+
+
+

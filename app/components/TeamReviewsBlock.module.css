@@ -1,0 +1,196 @@
+.teamReviewsBlock {
+  padding: 120px 10px;
+  background-color: #1B1B1B;
+  position: relative;
+}
+
+.title {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 106%;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 60px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title span {
+  margin-left: 212px;
+}
+
+.swiperContainer {
+  position: relative;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.slideContent {
+  display: grid;
+  grid-template-columns: 412px 1fr;
+  align-items: start;
+  position: relative;
+}
+
+.leftSection {
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.imageContainer img{
+  height: 420px;
+  object-position: left;
+}
+
+.employeeImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+
+.setkaOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 71px;
+  backdrop-filter: blur(3px);
+  background: rgba(189, 189, 189, 0.05);
+  border: 0.50px solid #fff;
+border-radius: 0 0 1px 1px;
+padding: 2px 4px;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 10px;
+letter-spacing: 0.02em;
+text-align: center;
+color: #fff;
+}
+
+.nameBox {
+  position: absolute;
+  bottom: 39px; /* расстояние от низа изображения */
+  right: 68px;
+
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.name {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  border: 0.50px solid #fff;
+border-radius: 1px 1px 0 1px;
+  color: #fff;
+  text-align: right;
+
+  width: fit-content;
+}
+
+.position {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-align: right;
+  width: fit-content;
+
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  border: 0.50px solid #fff;
+border-radius: 1px 1px 0 1px;
+  color: #fff;
+}
+
+.rightSection {
+  padding-left: 5px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slideNumber {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.yearsTitle {
+  font-family: "RockStar", sans-serif;
+font-weight: 400;
+font-size: 36px;
+line-height: 106%;
+text-transform: uppercase;
+color: #fff;
+}
+
+.reviewContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.reviewLabel {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+.reviewText {
+  font-family: "Roboto Mono", sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 114%;
+letter-spacing: -0.02em;
+color: #fff;
+  max-width: 280px;
+  margin-left: auto;
+}
+
+.navigationContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+  position: relative;
+  margin-top: -40px;
+  z-index: 10;
+}
+
+
+
+

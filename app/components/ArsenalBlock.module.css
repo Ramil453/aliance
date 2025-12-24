@@ -1,0 +1,96 @@
+.arsenalBlock {
+  background-color: #ff5522;
+  padding: 80px 90px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.title {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 106%;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 195px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.orangeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 85, 34, 0.9);
+  mix-blend-mode: multiply;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.item:hover .orangeOverlay {
+  opacity: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.titleText {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.subtitleText {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+
+
+

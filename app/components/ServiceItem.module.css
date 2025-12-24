@@ -1,0 +1,67 @@
+.serviceItem {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.serviceText {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  color: #fff;
+  transition: color 0.3s ease;
+  pointer-events: none;
+}
+
+.serviceItem:hover,
+.serviceItem:hover .serviceText {
+  color: #fff;
+}
+
+.serviceItem.inactive {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.serviceItem.inactive .serviceText {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.serviceImage {
+  position: absolute;
+  left: 80%;
+  width: 360px;
+  height: 240px;
+  bottom: 0;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .serviceItem{
+    font-size: 2.778vw;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .serviceText{
+    font-size: 5vw;
+
+  }
+
+
+
+ 
+}

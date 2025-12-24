@@ -1,0 +1,313 @@
+.servicesPage {
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 80px;
+  position: relative;
+  background-color: #1B1B1B;
+}
+
+.backButton {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  z-index: 10;
+}
+
+.backButton:hover {
+  color: #fff;
+}
+
+.header {
+  padding: 40px 10px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.number {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 1;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.title {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 1;
+  color: #fff;
+  margin: 0;
+}
+
+.description {
+  max-width: 500px;
+  text-align: right;
+  margin-left: auto;
+}
+
+.description p {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  padding: 20px 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  overflow-x: auto;
+}
+
+.filterButton {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.filterButton:hover {
+  color: #fff;
+}
+
+.filterButton.active {
+  color: #fff;
+}
+
+.filterDot {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+}
+
+.content {
+  position: relative;
+}
+
+.servicesGrid {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  margin-left: auto;
+}
+
+
+.serviceCard {
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(134, 137, 207, 0.05);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.serviceCard:hover {
+  background: rgba(134, 137, 207, 0.1);
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.serviceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.serviceTitle {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.serviceNumber {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  flex-shrink: 0;
+}
+
+.serviceCategory {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.categoryDot {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.serviceDescription {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+}
+
+.imageSection {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  pointer-events: none;
+  width: 130px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.frameWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.frameBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.colorStrip {
+  position: relative;
+  width: 100%;
+  will-change: transform;
+}
+
+.colorItem {
+  width: 100%;
+  height: 140px;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(134, 137, 207, 0.05);
+}
+
+.placeholderText {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .servicesGrid {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .imageSection {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    margin: 40px 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .number {
+    font-size: 60px;
+  }
+}

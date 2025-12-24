@@ -1,0 +1,138 @@
+.trustStoriesBlock {
+  padding: 120px 10px;
+}
+
+
+
+.title {
+    font-family: "RockStar", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 106%;
+    text-transform: uppercase;
+    color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleSecondLine {
+  margin-left: 212px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+}
+
+.storiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 731px;
+  margin-left:  auto;
+
+}
+
+.storyItem {
+  padding: 30px 0;
+}
+
+.storyHeader {
+  display: grid;
+  grid-template-columns: 1fr 413px;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.storyName {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.storyPosition {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.storyText {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    color: #fff;
+    max-width: 412px;
+    margin-left: auto;
+}
+
+.pdfLink {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  margin-left: auto;
+  max-width: 412px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  margin-top: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.pdfLink:hover {
+  color: #FF5522;  
+}
+
+.storyDivider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
+}
+
+.showMoreContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  margin-left: auto;
+}
+
+.showMoreButton {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.showMoreButton:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+
+
+
+
+

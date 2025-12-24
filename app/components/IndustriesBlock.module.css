@@ -1,0 +1,131 @@
+.industriesBlock {
+  padding: 120px 10px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  
+  align-items: start;
+}
+
+.leftSection {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.titleText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleLine {
+    font-family: "RockStar", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.titleLine:nth-child(2){
+    color: rgba(255, 255, 255, 0.5);
+}
+.titleLine:nth-child(3){
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+.rightSection > :first-child {
+  align-self: flex-end;
+}
+
+
+.slide{
+    width: 100%;
+}
+
+.scrollContainer {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.verticalSwiper {
+  height: 100%;
+  width: 100%;
+}
+
+.verticalSwiper :global(.swiper-slide) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.gradientTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, #1b1b1b, transparent);
+  z-index: 2;
+  pointer-events: none;
+  user-select: none;
+}
+
+.gradientBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to top, #1b1b1b, transparent);
+  z-index: 2;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+
+
+.industryItem {
+    font-family: "RockStar", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 108%;
+    color: #fff;
+}
+
+@media(max-width: 768px) {
+  .none {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .titleLine {
+    font-size: 4vw;
+  }
+  .titleText {
+    margin-bottom: 70px;
+
+  }
+  .verticalSwiper :global(.swiper-slide) {
+    justify-content: center;
+  }
+  .slide {
+    display: none;
+  }
+}

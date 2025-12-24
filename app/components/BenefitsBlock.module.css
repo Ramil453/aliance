@@ -1,0 +1,88 @@
+.benefitsBlock {
+  padding: 120px 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 731px;
+  gap: 4vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.description {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 40px;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.benefitItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0  20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.benefitItem:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.benefitTitle {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.benefitNumber {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.imageContainer {
+  width: 100%;
+  margin-top: auto;
+}
+
+.benefitImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+

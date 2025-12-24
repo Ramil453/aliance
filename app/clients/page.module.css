@@ -1,0 +1,159 @@
+.clientsPage {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 80px;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 20px;
+}
+
+.titleLine {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.title {
+    font-family: "RockStar", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 1;
+    padding-top: 12px;
+    border-bottom: 1px solid #fff;
+    
+    width: 100%;
+    color: #fff;
+}
+
+.titleLine:nth-child(3) .title{
+    border-bottom: none;
+}
+
+.titleLine:nth-child(2) .title {
+    padding-left: 100px;
+}
+
+.textGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4vw;
+  padding: 0 10px;
+  margin-top: 30px;
+  margin-bottom: 6vh;
+}
+
+.textLeft {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.5);
+  max-width: 413px;
+}
+
+.textRight {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    text-align: right;
+    max-width: 413px;
+
+    color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  margin-left: auto;
+}
+
+.swiperContainer {
+  position: relative;
+  padding: 0 10px;
+  margin-top: 120px;
+  margin-bottom: 6vh;
+}
+
+.swiper {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.slideContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4vw;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnTitle {
+    font-family: "RockStar", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 102%;
+    color: #fff;
+}
+
+.columnSubtitle {
+font-family: "Roboto Mono", sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 114%;
+letter-spacing: -0.02em;
+color: #fff;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 120px;
+}
+
+.columnDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: auto;
+
+}
+
+.columnDescriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.columnDescription p,
+.columnDescriptions p {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 15px;
+}
+
+.navigationContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+  position: relative;
+  margin-top: -40px;
+  z-index: 10;
+}
+

@@ -1,0 +1,247 @@
+.licensesInfoBlock {
+  width: 100%;
+  padding: 4vh 10px;
+  background-color: #1B1B1B;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 106%;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin-left: 212px;
+  line-height: 106%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.description {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 212px;
+  margin-top: 10px;
+}
+
+.filters {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filterButton {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.filterButton:hover {
+  color: #fff;
+}
+
+.filterButton.active {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.filterDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.projectRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr auto;
+  gap: 20px;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  align-items: center;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.projectRow:hover {
+  background: rgba(134, 137, 207, 0.1);
+}
+
+.projectRowExpanded {
+  background: #fff;
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+.projectRowExpanded svg path {
+  fill: #f52;
+}
+
+.projectRowExpanded svg {
+  transform: rotate(180deg);
+}
+
+.projectRowExpanded .projectName,
+.projectRowExpanded .projectStatus,
+.projectRowExpanded .projectType,
+.projectRowExpanded .projectYear {
+  color: #000;
+}
+
+.projectName {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.projectStatus {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.projectType {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.projectYear {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.expandButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.expandButton:hover {
+  opacity: 0.7;
+}
+
+.projectDetail {
+  background: #fff;
+  padding: 10px;
+  color: #000;
+}
+
+.detailContent {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.detailDescription {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.statItem {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.statNumber {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 1;
+  color: #000;
+}
+
+.statLabel {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+

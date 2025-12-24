@@ -1,0 +1,172 @@
+.aboutPage {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 40px;
+  background-color: #1B1B1B;
+}
+
+.heroSection {
+  padding: 60px 0;
+  position: relative;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.2fr;
+  gap: 4vw;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.column1 {
+  align-items: flex-start;
+}
+
+.column2 {
+  align-items: flex-start;
+  position: relative;
+}
+
+.column3 {
+  align-items: flex-end;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.column4 {
+  align-items: flex-end;
+}
+
+.phone {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.phone:hover {
+  color: #fff;
+}
+
+.description {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contentBlocks {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+
+.clientLinks {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.clientLink {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.clientLink:hover {
+  color: #fff;
+}
+
+.imageContainer {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  height: 293px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 293px;
+
+  object-fit: cover;
+}
+
+.email {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.email:hover {
+  color: #fff;
+}
+
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 170px;
+  line-height: 102%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.logoSubtitle{
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 102%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.scrollIndicator {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: auto;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+

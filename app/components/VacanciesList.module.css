@@ -1,0 +1,237 @@
+.vacanciesList {
+  padding: 120px 10px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4vw;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 106%;
+  text-transform: uppercase;
+  color: #fff;
+  width: 50%;
+}
+
+.description {
+  max-width: 731px;
+  margin-left: auto;
+  width: 100%;
+}
+
+.description p {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-align: left;
+}
+
+.filters {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filterButton {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.filterButton:hover {
+  color: #fff;
+}
+
+.filterButton.active {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.filterDot {
+  color: #fff;
+  font-size: 12px;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+}
+
+.vacanciesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.vacancyWrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.vacancyRow {
+  display: grid;
+  grid-template-columns: auto 2fr 1.5fr auto;
+  gap: 20px;
+  padding: 20px 10px;
+  align-items: center;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.vacancyRow:hover {
+  background: rgba(134, 137, 207, 0.1);
+}
+
+.vacancyRowExpanded {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tagsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 150px;
+}
+
+.tag {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 4px 12px;
+  width: fit-content;
+  transition: color 0.3s ease;
+}
+
+.vacancyRowExpanded .tag {
+  color: #fff;
+}
+
+.titleColumn {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
+}
+
+.vacancyRowExpanded .titleColumn {
+  color: #fff;
+}
+
+.detailsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: right;
+}
+
+.detailItem {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.detailLabel {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.detailValue {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
+}
+
+.vacancyRowExpanded .detailValue {
+  color: #fff;
+}
+
+.expandButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.expandButton:hover {
+  opacity: 0.7;
+}
+
+.plusIcon {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plusIcon.active {
+  color: #FF5522;
+  transform: rotate(45deg);
+}
+
+.plusIcon.active svg path {
+  fill: #FF5522;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+
+
+

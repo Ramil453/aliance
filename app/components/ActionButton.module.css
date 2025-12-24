@@ -1,0 +1,71 @@
+.actionButton {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  border-radius: 30px;
+  padding: 0px 3px 1px 4px;
+  height: 20px;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.primary {
+  background: #FFFFFF;
+  color: #000000;
+  border: none;
+}
+
+.primary:hover {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.secondary {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.secondary:hover {
+  background: #FFFFFF;
+  color: #000000;
+  border: none;
+}
+
+.accent {
+  background: #FF5522;
+  color: #FFFFFF;
+  border: none;
+}
+
+.accent:hover {
+  background: transparent;
+  color: #FF5522;
+  border: 1px solid #FF5522;
+}
+
+.actionButton:active {
+  opacity: 0.8;
+}
+
+@media(max-width: 768px) {
+  .actionButton {
+    width: 300px;
+    height: 43px;
+    font-size: 21px;
+  }
+}
+
+
+
+
+

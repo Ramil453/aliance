@@ -1,0 +1,76 @@
+.licensesBlock {
+  width: 100%;
+  padding: 80px 10px;
+  background-color: #1B1B1B;
+}
+
+.title {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 106%;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.title span{
+  margin-left: 212px;
+}
+
+.description {
+  font-family: "RockStar", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 212px;
+  max-width: 785px;
+  margin-top: 10px;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-left:  auto;
+  max-width: 713px;
+  margin-top: 40px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.detailText {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pdfLink {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 10px;
+}
+
+
+

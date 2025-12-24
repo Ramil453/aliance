@@ -1,0 +1,67 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 2vw;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+  background-color: #1B1B1B;
+}
+
+.link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 127%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  opacity: 0.5;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.link:hover {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.linkActive {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 127%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  opacity: 1;
+}
+
+.divider {
+  width: 1px;
+  height: 2vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 0.5vh;
+}
+
+
+
+@media screen and (360px < width < 768px) {
+  .link {
+    font-size: 3.333vw;  
+  }
+
+  .nav {
+    border-bottom: none;
+  }
+  
+}

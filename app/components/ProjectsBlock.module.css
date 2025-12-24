@@ -1,0 +1,358 @@
+.projectsBlock {
+	padding: 4vh 10px;
+	position: relative;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.mainTitle,
+.hideTitle {
+	font-family: 'RockStar', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 106%;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0;
+}
+
+.subtitle,
+.hideSubtitle {
+	font-family: 'RockStar', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	margin-left: 212px;
+	line-height: 106%;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.hideTitle,
+.hideSubtitle,
+.hideDescription {
+	display: none;
+}
+
+.description, .hideDescription {
+	font-family: 'RockStar', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+	margin-left: 212px;
+}
+
+.filters {
+	display: flex;
+	gap: 25px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.filterButton {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 120%;
+	letter-spacing: -0.02em;
+	letter-spacing: -0.02em;
+	color: rgba(255, 255, 255, 0.5);
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	transition: color 0.3s ease;
+}
+
+.filterButton:hover {
+	color: #fff;
+}
+
+.filterButton.active {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 120%;
+	letter-spacing: -0.02em;
+	color: #fff;
+}
+
+.filterDot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	display: inline-block;
+}
+
+.divider {
+	height: 1px;
+	background: rgba(255, 255, 255, 0.3);
+	margin-bottom: 20px;
+}
+
+.projectsList {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+.projectRow {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1.5fr 1fr auto;
+	gap: 20px;
+	padding: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	align-items: center;
+	transition: background 0.3s ease;
+	cursor: pointer;
+}
+
+.projectRow:hover {
+	background: rgba(134, 137, 207, 0.1);
+}
+
+.projectRowExpanded {
+	background: #fff;
+	color: #000;
+	transition: transform 0.3s ease;
+}
+
+.projectsList .projectDetail {
+	padding-top: 80px;
+}
+
+.projectRowExpanded:hover {
+	background: #fff;
+}
+
+.projectRowExpanded svg path {
+	fill: #f52;
+}
+
+.projectRowExpanded svg {
+	transform: rotate(180deg);
+}
+
+.projectRowExpanded .projectName,
+.projectRowExpanded .projectStatus,
+.projectRowExpanded .projectType,
+.projectRowExpanded .projectYear {
+	color: #000;
+}
+
+.projectName {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114%;
+	letter-spacing: -0.02em;
+	color: #fff;
+}
+
+.projectStatus {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114%;
+	letter-spacing: -0.02em;
+	color: #fff;
+}
+
+.projectType {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114%;
+	letter-spacing: -0.02em;
+	color: #fff;
+}
+
+.projectYear {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114%;
+	letter-spacing: -0.02em;
+	color: #fff;
+}
+
+.expandButton {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.3s ease;
+}
+
+.expandButton:hover {
+	opacity: 0.7;
+}
+
+.projectDetail {
+	background: #fff;
+	padding: 10px;
+	color: #000;
+}
+
+.detailHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 30px;
+}
+
+.detailTitleSection {
+	flex: 1;
+}
+
+.detailTitle {
+	font-family: 'RockStar', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.2;
+	color: #000;
+	margin: 0 0 10px 0;
+}
+
+.detailStatus {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114%;
+	letter-spacing: -0.02em;
+	color: #000;
+}
+
+.detailMeta {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 10px;
+}
+
+.detailCategory {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114%;
+	letter-spacing: -0.02em;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.detailYearSection {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.detailYear {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114%;
+	letter-spacing: -0.02em;
+	color: #000;
+}
+
+.uploadButton {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.detailContent {
+	display: grid;
+	grid-template-columns: 400px 200px 290px 190px;
+	gap: 10px;
+	align-items: center;
+}
+
+.detailDescription {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	letter-spacing: -0.02em;
+	color: #000;
+}
+
+.statItem {
+	display: flex;
+	align-items: flex-end;
+	gap: 10px;
+}
+
+.statNumber {
+	font-family: 'RockStar', sans-serif;
+	font-weight: 400;
+	font-size: 100px;
+	line-height: 1;
+	color: #000;
+}
+
+.statLabel {
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 20px;
+	line-height: 120%;
+	letter-spacing: -0.02em;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 40px;
+}
+
+@media (max-width: 1440px) {
+	.subtitle,
+	.mainTitle,
+	.description {
+		display: none;
+	}
+	.hideTitle,
+	.hideSubtitle,
+	.hideDescription {
+		display: block;
+	}
+}
+
+@media(max-width: 768px) {
+	.projectRow {
+		display: flex;
+		justify-content: space-between;
+	}
+	.filterButton, .active, .projectName, .projectType, .projectYear {
+		font-size: 1.5vw;
+	}
+	.expandButton, .projectStatus {
+		display: none;
+	}
+	.projectRow {
+		padding: 10px 0;
+	}
+	
+}
